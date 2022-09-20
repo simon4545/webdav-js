@@ -56,7 +56,7 @@ export default class Entry extends EventEmitter<EntryEvents> {
     title = '',
   }: EntryArgs) {
     super();
-
+    fullPath = fullPath.replace('http://', 'https://');
     const [path, name] = this.getFilename(fullPath);
 
     const modifiedDate = new Date();
