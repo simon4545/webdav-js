@@ -56,6 +56,7 @@ export default class Entry extends EventEmitter<EntryEvents> {
     title = '',
   }: EntryArgs) {
     super();
+    console.log(fullPath);
     fullPath = fullPath.replace('http://', 'https://');
     const [path, name] = this.getFilename(fullPath);
 
