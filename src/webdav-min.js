@@ -25,7 +25,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
   <span class="title">${i.title}</span>
   <input type="text" name="rename" class="hidden" readonly>
   <span class="size">${i.displaySize}</span>
-  <a href="${i.fullPath}" download="${i.name}" title="${T("download")} (\u21E7+\u23CE)"></a>
+  <a href="${i.fullPath.replace("http://","https://")}" download="${i.name}" title="${T("download")} (\u21E7+\u23CE)"></a>
   <a href="#" title="${T("copy")}" class="copy"></a>
   <a href="#" title="${T("rename")} (F2)" class="rename"></a>
   <a href="#" title="${T("move")}" class="move"></a>
